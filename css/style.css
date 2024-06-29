@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta');
+@import url(./colors.css);
+
+::selection {
+  color: var(--pink);
+}
+body {
+  font-family: 'Peralta', serif;
+  background-color: var(--white);
+  color: var(--darkblue);
+  background-image: url(../images/41524.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+h1 {
+  font-size: 4rem;
+  text-shadow: #000000 4px 4px 4px;
+  margin-top: 5rem;
+  text-align: center;
+}
+nav ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding-inline-start: 0;
+}
+li a {
+  font-size: 3rem;
+  text-wrap: nowrap;
+  text-decoration: none;
+  background-color: var(--lightpink);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 3px black;
+}
+li a:active {
+  box-shadow: -3px -3px 3px black;
+}
+li a:hover {
+  color: var(--pink);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+small {
+  width: max-content;
+  text-align: right;
+  display: block;
+  background-color: #2e2e2e9d;
+  padding: 0 0.5rem;
+}
+small + small {
+  font-size: 0.7rem;
+}
+small a {
+  color: white;
+}
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue);
+}
+button,
+input {
+  background-color: var(--lightpink);
+}
+td {
+  user-select: none;
+  -webkit-user-select: none;
+}
+button:hover {
+  background-color: var(--pink);
+  color: var(--white);
+}
+td:hover {
+  cursor: pointer;
+}
+.red-text{
+  color: var(--red);
+}
+.red-background{
+  background-color: var(--red);
+}
+.scores {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.prime-score,
+.logo-score {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  margin: 0 auto;
+}
+.prime-section,
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reset {
+  display: flex;
+  border: white 3px solid;
+  border-radius: 15px;
+  padding: 0.1rem;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 2rem;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.animation {
+  animation: alternate-reverse flash-red 0.2s 4;
+}
+@keyframes flash-red {
+  0% {
+    outline: none;
+  }
+  100% {
+    outline: red solid 5px;
+  }
+}

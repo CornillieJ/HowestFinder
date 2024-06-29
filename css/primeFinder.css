@@ -1,0 +1,40 @@
+@import url(./colors.css);
+h1 {
+  text-align: left;
+  margin: 0;
+}
+.prime-count {
+  color: var(--blue);
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px 2px black;
+}
+.prime {
+  background-color: var(--prime);
+  outline: var(--prime-outline) 5px solid;
+}
+.wrong {
+  background-color: var(--wrong);
+  outline: var(--wrong-outline) 5px solid;
+}
+body {
+  background-color: var(--white);
+  height: 100vh;
+}
+table td {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3rem;
+  width: 15vh;
+  height: 15vh;
+  z-index: 10;
+}
+table {
+  margin-top: 2rem;
+  border-spacing: 5vw 1rem;
+}
+
+td {
+  box-shadow: 6px 6px 6px rgb(74, 74, 0);
+}

@@ -1,0 +1,21 @@
+:root {
+  --darkblue:rgb(85, 26, 139);
+  --blue: #0084b0;
+  --blue-opacity: #44c9f596;
+  --white: #feffff;
+  --pink: #ec008c;
+  --lightpink: #f9b2dc;
+  --yellow: #fff23b;
+  --lighyellow: #fffded;
+  --green: #007408;
+  --lightgreen: #2fff8295;
+  --black: #000000;
+  --lightred: #ed4949d1;
+  --red: #ff0000d1;
+  --win-color: #0bc2ffa1;
+  --prime: var(--lightgreen);
+  --prime-outline: var(--green);
+  --wrong: var(--lightred);
+  --wrong-outline: var(--red);
+  --game-background: rgba(119, 119, 119, 0.423);
+}

@@ -1,0 +1,41 @@
+@import url(./colors.css);
+.win {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: var(--lightpink);
+  text-shadow: 0 0 4px black;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 5;
+}
+.win h2 {
+  font-size: 3rem;
+}
+.win div {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--win-color);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+.score {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+.invisible {
+  display: none;
+}
