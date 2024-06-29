@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Zoektochten</title>
+  <script src="./scripts/session.js"></script>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <h1>Zin in een spelletje?</h1>
+  <nav>
+    <ul>
+      <li><a href="./pages/primeFinder.html">Prime Finder</a></li>
+      <li><a href="./pages/logoFinder.html">Logo Finder</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="scores">
+      <div class="prime-section">
+        <p class="prime-score">0/0</p>
+        <button type="button" class="reset" onclick="resetScore('prime')">Reset</button>
+      </div>
+      <div class="logo-section">
+        <p class="logo-score">0/0</p>
+        <button type="button" class="reset" onclick="resetScore('logo')">Reset</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <small>&copy;Cornillie Jeffrey</small>
+    <small>background image designed by <a href="http://www.freepik.com">macrovector / Freepik</a></small>
+  </footer>
+</body>
+
+</html>
