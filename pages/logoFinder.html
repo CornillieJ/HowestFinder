@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Finder</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/logoFinder.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/winWindow.css">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+  <h1>Vind het Logo!</h1>
+  <div class="win invisible" onclick="closeWin()">
+    <div>
+      <h2>Gewonnen!</h2>
+      <p class="score"></p>
+    </div>
+  </div>
+  <div class="game-container">
+    <div class="play-field">
+
+    </div>
+  </div>
+  <div class="input-field">
+    <label class="amount-label" for="box-amount"> Hoeveel vakjes wil je?</label>
+    <input type="text" id="box-amount" title="box-amount" name="box-amount" value="2-20">
+    <button class="play-button" onclick="generatePlayField()">Speel !</button>
+    <button class="reset-button invisible" onclick="resetPlayField()">Reset !</button>
+  </div>
+  <p class="tries">Aantal pogingen over:    </p>
+  <script src="../scripts/commonScript.js"></script>
+  <script src="../scripts/logoFinderScript.js"></script>
+  <footer>
+    <small>&copy;Cornillie Jeffrey</small>
+    <small>background image designed by <a href="http://www.freepik.com">macrovector / Freepik</a></small>
+  </footer>
+</body>
+
+</html>
